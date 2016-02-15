@@ -28,4 +28,16 @@ public class TriangleTest {
     Triangle testTriangle = new Triangle(2, 3, 4);
     assertEquals(true, testTriangle.isTriangle());
   }
+
+  @Test
+  public void isScalene_noSidesEquals_true() {
+    Triangle testTriangle = new Triangle(3, 4, 5);
+    assertEquals(true, testTriangle.isScalene());
+  }
+
+  @Test
+  public void isIsosceles_twoSidesEqual_true() {
+    Triangle testTriangle = new Triangle(2, 2, 3);
+    assertEquals(true, testTriangle.isIsosceles());
+  }
 }

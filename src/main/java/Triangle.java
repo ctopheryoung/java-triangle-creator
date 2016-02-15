@@ -9,10 +9,6 @@ public class Triangle {
     mSideC = sideC;
   }
 
-  public boolean isTriangle() {
-    return ((mSideA + mSideB > mSideC) && (mSideB + mSideC > mSideA) && (mSideC + mSideA > mSideB));
-  }
-
   public int getSideA() {
     return mSideA;
   }
@@ -23,5 +19,17 @@ public class Triangle {
 
   public int getSideC() {
     return mSideC;
+  }
+
+  public boolean isTriangle() {
+    return ((mSideA + mSideB > mSideC) && (mSideB + mSideC > mSideA) && (mSideC + mSideA > mSideB));
+  }
+
+  public boolean isScalene() {
+    return ((mSideA != mSideB) && (mSideB != mSideC) && (mSideA != mSideC));
+  }
+
+  public boolean isIsosceles() {
+    return (((mSideA == mSideB) && (mSideA!= mSideC)) || ((mSideB == mSideC) && (mSideB != mSideA)) || ((mSideA == mSideC) && (mSideA != mSideB)));
   }
 }
