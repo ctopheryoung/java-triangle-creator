@@ -18,9 +18,19 @@ public class AppTest extends FluentTest {
   @ClassRule
   public static ServerRule server = new ServerRule();
 
-  // @Test
-  // public void rootTest() {
-  //     goTo("http://localhost:4567/");
-  //     assertThat(pageSource()).contains("");
-  // }
+  @Test
+  public void rootTest() {
+      goTo("http://localhost:4567/");
+      assertThat(pageSource()).contains("Triangle Test");
+  }
+
+  @Test
+  public void returnsEquilateral() {
+    goTo("http://localhost:4567/");
+    fill("#sideA").with("5");
+    fill("#sideB").with("5");
+    fill("#sideC").with("5");
+    submit(".btn");
+    assertThat(pageSource()).contains("Your triangle is an equilateral!");
+  }
 }

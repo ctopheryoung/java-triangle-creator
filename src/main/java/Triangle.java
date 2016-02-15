@@ -34,6 +34,6 @@ public class Triangle {
   }
 
   public boolean isEquilateral() {
-    return (((mSideA == mSideB) && (mSideB == mSideC)) || ((mSideB == mSideC) && (mSideB == mSideA)) || ((mSideA == mSideC) && (mSideA == mSideC)));
+    return ((mSideA == mSideB) && (mSideB == mSideC));
   }
 }
