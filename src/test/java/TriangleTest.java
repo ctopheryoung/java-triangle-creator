@@ -40,4 +40,16 @@ public class TriangleTest {
     Triangle testTriangle = new Triangle(2, 2, 3);
     assertEquals(true, testTriangle.isIsosceles());
   }
+
+  @Test
+  public void isIsoceles_noSidesEqual_false() {
+    Triangle testTriangle = new Triangle(2,3,4);
+    assertEquals(false, testTriangle.isIsosceles());
+  }
+
+  @Test
+  public void isEquilateral_allSidesEqual_true() {
+    Triangle testTriangle = new Triangle(2,2,2);
+    assertEquals(true, testTriangle.isEquilateral());
+  }
 }

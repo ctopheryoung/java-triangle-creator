@@ -32,4 +32,8 @@ public class Triangle {
   public boolean isIsosceles() {
     return (((mSideA == mSideB) && (mSideA!= mSideC)) || ((mSideB == mSideC) && (mSideB != mSideA)) || ((mSideA == mSideC) && (mSideA != mSideB)));
   }
+
+  public boolean isEquilateral() {
+    return (((mSideA == mSideB) && (mSideB == mSideC)) || ((mSideB == mSideC) && (mSideB == mSideA)) || ((mSideA == mSideC) && (mSideA == mSideC)));
+  }
 }
