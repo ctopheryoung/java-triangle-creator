@@ -11,7 +11,7 @@ Enter three lengths and find out what type of triangle they create.
 * Isosceles: Two sides equal
 * Equilateral: Three sides equal
 
-Or, if the entered dimensions make a valid triangle do not, the user is alerted. 
+Or, if the entered dimensions a valid triangle do not make, the user is alerted. 
 
 ## Setup/Installation Requirements
 
