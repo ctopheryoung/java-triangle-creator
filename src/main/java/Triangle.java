@@ -9,6 +9,10 @@ public class Triangle {
     mSideC = sideC;
   }
 
+  public boolean isTriangle() {
+    return ((mSideA + mSideB > mSideC) && (mSideB + mSideC > mSideA) && (mSideC + mSideA > mSideB));
+  }
+
   public int getSideA() {
     return mSideA;
   }
@@ -16,7 +20,7 @@ public class Triangle {
   public int getSideB() {
     return mSideB;
   }
-  
+
   public int getSideC() {
     return mSideC;
   }
