@@ -22,5 +22,5 @@ public class AppTest extends FluentTest {
   // public void rootTest() {
   //     goTo("http://localhost:4567/");
   //     assertThat(pageSource()).contains("");
-  }
+  // }
 }
